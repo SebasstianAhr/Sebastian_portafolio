@@ -5,3 +5,106 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+body{
+    background-image: url("./img/background.svg");
+    background-size: cover;
+    background-attachment: scroll;    
+}
+
+::selection{
+    background-color: #6b02fd57;
+}
+
+h1{font-size: 3rem;}
+h2{font-size: 2.5rem;}
+h3{font-size: 2.3rem;}
+h4{font-size: 2rem;}
+h5{font-size: 1.6rem;}
+h6{font-size: 1.3rem;}
+p{font-size: 1rem;}
+
+
+/* variables */
+:root{
+    --primerColor : #6b02fd;    
+}
+
+.navBar{
+    width: 100%;
+    padding: 1.3rem 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(3px);
+    position: fixed;
+}
+
+.navBar-item{
+
+    list-style: none;
+}
+
+.item{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    
+}
+
+.principal-info-text h1,  h5, p{
+
+    color: #fff;
+    
+
+}
+
+.principal-Info{
+/* para centrar hay que tener en cuenta estas trescosas */
+
+height: 100vh;
+width: 100%;
+display: flex;  /*se coloca un elemento al lado del otro*/
+justify-content: center; /*se centra en el eje horizontal*/
+align-items: center;/* centra en eje vertical*/
+position: relative;
+}
+
+.principal-info-contaier{
+
+    max-width: 900px;
+    width: 100%;
+    height: 80vh;
+    padding: 66.6px;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal-Info-img img{
+
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 70px 1px #6b02fd33;
+    
+
+}
+
+.alaAngel, .alaDiablo{
+    position: absolute;
+
+}
+
+.alaAngel{
+    top: 40%;
+    left: 5%;
+    z-index: -1;
+}
+.alaDiablo{
+    top: 40%;
+    right: 5%;
+    z-index: -1;
+}
